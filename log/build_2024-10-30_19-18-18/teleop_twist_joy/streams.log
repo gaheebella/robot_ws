@@ -1,0 +1,80 @@
+[0.025s] Invoking command in '/home/gahee9006/robot_ws/build/teleop_twist_joy': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/gahee9006/robot_ws/src/teleop_twist_joy -DCMAKE_INSTALL_PREFIX=/home/gahee9006/robot_ws/install/teleop_twist_joy
+[0.391s] -- The C compiler identification is GNU 9.4.0
+[0.662s] -- The CXX compiler identification is GNU 9.4.0
+[0.682s] -- Check for working C compiler: /usr/bin/cc
+[0.783s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.787s] -- Detecting C compiler ABI info
+[0.862s] -- Detecting C compiler ABI info - done
+[0.876s] -- Detecting C compile features
+[0.877s] -- Detecting C compile features - done
+[0.883s] -- Check for working CXX compiler: /usr/bin/c++
+[0.965s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.966s] -- Detecting CXX compiler ABI info
+[1.069s] -- Detecting CXX compiler ABI info - done
+[1.079s] -- Detecting CXX compile features
+[1.079s] -- Detecting CXX compile features - done
+[1.104s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.144s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.145s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.408s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[1.474s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.490s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.623s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.658s] -- Found FastRTPS: /opt/ros/foxy/include  
+[1.784s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.912s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[2.012s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[2.017s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.022s] -- Looking for pthread.h
+[2.131s] -- Looking for pthread.h - found
+[2.131s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.223s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[2.224s] -- Looking for pthread_create in pthreads
+[2.293s] -- Looking for pthread_create in pthreads - not found
+[2.294s] -- Looking for pthread_create in pthread
+[2.364s] -- Looking for pthread_create in pthread - found
+[2.365s] -- Found Threads: TRUE  
+[2.557s] -- Found rclcpp_components: 2.4.3 (/opt/ros/foxy/share/rclcpp_components/cmake)
+[2.656s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[2.737s] -- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+[2.836s] -- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+[2.837s] -- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+[2.919s] -- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+[2.920s] -- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+[3.005s] -- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+[3.012s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[3.116s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[3.137s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[3.146s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+[3.146s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.147s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[3.147s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[3.168s] -- Found PythonExtra: .so  
+[3.209s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.209s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/gahee9006/robot_ws/src/teleop_twist_joy/include>
+[3.209s] -- Configured cppcheck exclude dirs and/or files: 
+[3.212s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[3.212s] -- Configured cpplint exclude dirs and/or files: 
+[3.213s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.215s] -- Added test 'lint_cmake' to check CMake code style
+[3.216s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[3.219s] -- Added test 'uncrustify' to check C / C++ code style
+[3.219s] -- Configured uncrustify additional arguments: 
+[3.221s] -- Added test 'xmllint' to check XML markup files
+[3.232s] -- Configuring done
+[3.233s] CMake Error at CMakeLists.txt:39 (add_executable):
+[3.234s]   Target "teleop_twist_joy_node" links to target
+[3.234s]   "rclcpp_components::component" but the target was not found.  Perhaps a
+[3.234s]   find_package() call is missing for an IMPORTED target, or an ALIAS target
+[3.234s]   is missing?
+[3.234s] 
+[3.234s] 
+[3.234s] CMake Error at CMakeLists.txt:20 (add_library):
+[3.234s]   Target "teleop_twist_joy" links to target "rclcpp_components::component"
+[3.234s]   but the target was not found.  Perhaps a find_package() call is missing for
+[3.234s]   an IMPORTED target, or an ALIAS target is missing?
+[3.234s] 
+[3.234s] 
+[3.242s] -- Generating done
+[3.244s] CMake Generate step failed.  Build files cannot be regenerated correctly.
+[3.251s] Invoked command in '/home/gahee9006/robot_ws/build/teleop_twist_joy' returned '1': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/gahee9006/robot_ws/src/teleop_twist_joy -DCMAKE_INSTALL_PREFIX=/home/gahee9006/robot_ws/install/teleop_twist_joy
